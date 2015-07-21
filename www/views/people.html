@@ -1,0 +1,21 @@
+<ion-view title="{{depName}}" cache-view="false">
+
+    <ion-content has-header="true" has-subheader="true" has-tabs="true">
+        <ion-list>
+            <ion-item class="item-toggle-option" ng-repeat="people in peoples | toArray | orderBy:'name'" ng-click="change(people)">
+                {{ people.name }}
+                <label class="toggle toggle-balanced">
+                    <input type="checkbox" ng-model="people.marked" ng-click="change(people);" >
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </ion-item>
+        </ion-list>
+        <!-- 
+        <div class="item">
+          <pre ng-bind="peoples | json"></pre> 
+        </div>
+         -->
+    </ion-content>
+</ion-view>

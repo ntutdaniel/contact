@@ -1,0 +1,79 @@
+.item-toggle-option .toggle {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    z-index: 3;
+}*{
+    font: 16px 蘋果儷中黑, 微軟正黑體, simhei, 'ms gothic';
+}
+
+/*顏色背景*/
+.tabs{
+  background-color: #636060 !important;
+  border-color: #636060 !important;
+}
+
+.bar-positive, .positive, .positiveButton{
+  background-color: #FFA52D !important;
+  border-color: #FFA52D !important;
+}
+ion-view, .friendGB {
+  background-image: url("../images/white-linen.png");
+}
+
+li.item:nth-child(odd) {
+  background-color: rgba(194, 194, 194, 0.11);
+  border: none;
+}
+li.item:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+li.item h2{
+  display: inline-block;
+  font-weight: bolder;
+}
+.ticketInfo {
+  display: inline-block;
+  vertical-align: super;
+}
+.business li.item h2 {
+  vertical-align: 1em;
+}
+li.item h4{
+    color: red;
+}
+
+li.item i {
+    float: right;
+}
+.BusinessImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.CouponsImg {
+    width: 50%;
+}
+.headerTabs {
+    background-color: #f8f8f8 !important;
+      border-color: #f8f8f8 !important;
+}
+
+.tabs-striped.tabs-background-stable .tabs  {
+  background-color: #f8f8f8 !important;
+}
+
+.content {
+    padding: 1em;
+}
+
+.booklet {
+    width: 100%;
+    box-shadow: 5px 5px 15px gray;
+}
+
+select {
+  min-width: 75px;
+  border-radius: 5px;
+}

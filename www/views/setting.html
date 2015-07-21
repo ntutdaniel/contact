@@ -1,0 +1,18 @@
+﻿<ion-view title="設定">
+    <ion-content padding="true" class="setting">
+
+        <h4 ng-show="me.name == '' || me.name == null" class="setting-note">
+            資料讀取中，請稍後........
+        </h4>
+
+        <div class="list">
+            <ion-item class="item-avatar item">
+                <img src="images/icon-person-128.png">
+                <h2 style="font-size:25px;margin-top: 6px;">{{me.name}}</h2>
+            </ion-item>
+            <ion-item class="item">
+                手機：{{me.phone}}
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

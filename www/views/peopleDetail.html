@@ -1,0 +1,45 @@
+<ion-view title="聯絡人資料" cache-view="false">
+    <ion-content has-header="true" has-tabs="true" class="has-tabs">
+        <div class="list card">
+        
+            <ion-item class="item-avatar item item-icon-left">
+                <img src="images/icon-person-128.png">
+                <h2 style="font-size:25px;margin-top: 6px;">{{people.name}}</h2>
+            </ion-item>
+            
+            <ion-item class="item-icon-right" >
+                部門：{{people.org}}   <i class="ion-android-arrow-dropright"></i> {{people.dep}}
+            </ion-item>
+                        
+            <ion-item class="item-button-right" ng-show="people.phone!=''&&people.phone!=null">
+                手機：{{people.phone}}
+                <div class="buttons">
+                    <button class="button button-clear button-dark icon ion-android-call" ng-click="href('tel:' + people.phone)"></button>
+                    <button class="button button-clear button-dark icon ion-chatbox" ng-click="href('sms:' + people.phone)" ></button>
+                </div>
+            </ion-item>
+            
+            <ion-item class="item-button-right" ng-show="people.tel!=null && people.tel!=''">
+                電話：02-27712171#{{people.tel}}
+                <div class="buttons">
+                    <button class="button button-clear button-dark icon ion-social-whatsapp" ng-click="href('tel:02-27712171')"></button>
+                </div>
+            </ion-item>
+            
+            <ion-item class="item-icon-right" ng-show="people.email != '' && people.email != null">
+                郵件：{{people.email}}
+                <div class="buttons">
+                    <button class="button button-clear button-dark icon ion-email" ng-click="href('mailto:' + people.email)"></button>
+                </div>
+            </ion-item>
+            
+            <ion-item class="item-button-right" ng-show="people.phone.length == 10">
+                訊息：<span style="font-size:13px">{{member.phone}}@apps.csie.ntut.edu.tw</span>
+                <div class="buttons">
+                    <button class="button button-clear button-dark icon ion-chatbubbles" ui-sref="tab.chat({ phone : member.phone, name: member.name })"></button>
+                </div>
+            </ion-item>
+            
+        </div>       
+    </ion-content>
+</ion-view>
